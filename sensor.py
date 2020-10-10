@@ -88,7 +88,18 @@ def print_latest_data(data):
     
     file = "data.txt"
     fileobj = open(file, "a", encoding = "utf_8") 
-    fileobj.write(temperature + "," + relative_humidity + "\n")
+    fileobj.write(time_measured + ",")
+    fileobj.write(temperature + ",")
+    fileobj.write(relative_humidity + ",")
+    fileobj.write(ambient_light + ",")
+    fileobj.write(barometric_pressure + ",")
+    fileobj.write(sound_noise + ",")
+    fileobj.write(eTVOC + ",")
+    fileobj.write(eCO2 + ",")
+    fileobj.write(discomfort_index + ",")
+    fileobj.write(heat_stroke + ",")
+    fileobj.write(vibration_information + ",")
+    fileobj.write("\n")
     fileobj.close	
 
 
