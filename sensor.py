@@ -87,7 +87,7 @@ def print_latest_data(data):
     print("Seismic intensity flag:" + seismic_intensity_flag)
     
     file = "data.txt"
-    fileobj = open(file, "w", mode = "a", encoding = "utf_8") 
+    fileobj = open(file, "a", encoding = "utf_8") 
     fileobj.write(temperature + "," + relative_humidity + "\n")
     fileobj.close	
 
