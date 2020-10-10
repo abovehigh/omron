@@ -134,7 +134,7 @@ if __name__ == '__main__':
             time.sleep(0.1)
             data = ser.read(ser.inWaiting())
             print_latest_data(data)
-            time.sleep(1)
+            time.sleep(10)
 
     except KeyboardInterrupt:
         # LED Off.
