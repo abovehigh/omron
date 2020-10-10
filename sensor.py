@@ -99,6 +99,9 @@ def print_latest_data(data):
     fileobj.write(discomfort_index + ",")
     fileobj.write(heat_stroke + ",")
     fileobj.write(vibration_information + ",")
+    fileobj.write(si_value + ",")
+    fileobj.write(pga + ",")
+    fileobj.write(seismic_intensity)
     fileobj.write("\n")
     fileobj.close	
 
