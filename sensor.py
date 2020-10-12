@@ -58,6 +58,7 @@ def print_latest_data(data):
     si_value_flag = str(int(hex(data[53]), 16))
     pga_flag = str(int(hex(data[54]), 16))
     seismic_intensity_flag = str(int(hex(data[55]), 16))
+    """
     print("")
     print("Time measured:" + time_measured)
     print("Temperature:" + temperature)
@@ -85,7 +86,7 @@ def print_latest_data(data):
     print("SI value flag:" + si_value_flag)
     print("PGA flag:" + pga_flag)
     print("Seismic intensity flag:" + seismic_intensity_flag)
-    
+    """
     file = "data.txt"
     fileobj = open(file, "a", encoding = "utf_8") 
     fileobj.write(time_measured + ",")
